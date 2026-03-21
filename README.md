@@ -15,7 +15,7 @@ Whenever code is pushed to GitHub, the pipeline is triggered and the application
 - GitHub
 
 ## Architecture Diagram
-
+```
 Developer 
     │ 
     ▼ 
@@ -32,9 +32,11 @@ Amazon EC2
     │ 
     ▼
 Flask Application
+```
 
 ## Project Structure
 
+```
 ├── app.py # Main Flask application 
 ├── requirements.txt # Python dependencies 
 ├── appspec.yml # CodeDeploy configuration file 
@@ -42,6 +44,7 @@ Flask Application
 │   ├── install.sh # Install dependencies 
 │   ├── start.sh # Start application 
 │   └── stop.sh # Stop running application
+```
 
 ## Learning Outcomes
 Through this project, I gained hands-on experience in:
