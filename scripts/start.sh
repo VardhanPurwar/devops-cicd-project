@@ -1,2 +1,8 @@
 #!/bin/bash
-nohup python3 app.py > output.log 2>&1 &
+#!/bin/bash
+
+cd /home/ubuntu/app
+
+source venv/bin/activate
+
+nohup python3 app.py > app.log 2>&1 &
