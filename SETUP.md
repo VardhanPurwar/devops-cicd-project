@@ -27,19 +27,19 @@ ssh -i your-key.pem ubuntu@<EC2-PUBLIC-IP>
 
 ## Step 3: Install Required Software
 
-sudo apt update
-sudo apt install python3-pip -y
-sudo apt install ruby -y
-sudo apt install wget -y
+- sudo apt update
+- sudo apt install python3-pip -y
+- sudo apt install ruby -y
+- sudo apt install wget -y
 
 ## Step 4: Install CodeDeploy Agent
 
-cd /home/ubuntu
-wget https://aws-codedeploy-<region>.s3.<region>.amazonaws.com/latest/install
-chmod +x ./install
-sudo ./install auto
-sudo systemctl start codedeploy-agent
-sudo systemctl status codedeploy-agent
+- cd /home/ubuntu
+- wget https://aws-codedeploy-<region>.s3.<region>.amazonaws.com/latest/install
+- chmod +x ./install
+- sudo ./install auto
+- sudo systemctl start codedeploy-agent
+- sudo systemctl status codedeploy-agent
 
 ## Step 5: Create IAM Role for EC2
 1. Go to IAM → Roles
@@ -79,11 +79,11 @@ hooks:
 
 install.sh
 
-#!/bin/bash
-cd /home/ubuntu/app
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+  #!/bin/bash
+  cd /home/ubuntu/app
+  python3 -m venv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
 
 start.sh
 
