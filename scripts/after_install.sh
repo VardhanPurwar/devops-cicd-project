@@ -1,6 +1,9 @@
 #!/bin/bash
 
-set -ex
+set -e
+
+echo "Fixing permissions..."
+sudo chown -R ubuntu:ubuntu /home/ubuntu/app
 
 echo "Moving to app directory..."
 cd /home/ubuntu/app
@@ -11,7 +14,11 @@ rm -rf venv
 echo "Creating virtual environment..."
 python3 -m venv venv
 
+echo "Activating virtual environment..."
+source venv/bin/activate
+
 echo "Installing dependencies..."
-./venv/bin/pip install -r requirements.txt
+pip install --upgrade pip
+pip install -r requirements.txt
 
 echo "AfterInstall completed"
