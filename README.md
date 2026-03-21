@@ -37,13 +37,13 @@ Flask Application
 ## Project Structure
 
 ```
-├── app.py # Main Flask application 
-├── requirements.txt # Python dependencies 
-├── appspec.yml # CodeDeploy configuration file 
-├── scripts/ # Deployment scripts 
-│   ├── install.sh # Install dependencies 
-│   ├── start.sh # Start application 
-│   └── stop.sh # Stop running application
+├── app.py                     # Main Flask application 
+├── requirements.txt           # Python dependencies 
+├── appspec.yml                # CodeDeploy configuration file 
+├── scripts/                   # Deployment scripts 
+│   ├── install.sh             # Install dependencies 
+│   ├── start.sh               # Start application 
+│   └── stop.sh                # Stop running application
 ```
 
 ## Learning Outcomes
@@ -52,4 +52,3 @@ Through this project, I gained hands-on experience in:
 - Understanding how AWS CodePipeline automates build and deployment workflows.
 - Working with AWS CodeDeploy lifecycle hooks and deployment strategies.
 - Deploying and managing applications on Amazon EC2.
-- 
