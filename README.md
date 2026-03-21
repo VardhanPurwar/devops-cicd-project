@@ -46,6 +46,10 @@ Flask Application
 │   └── stop.sh                # Stop running application
 ```
 
+## Setup Instructions
+
+Read `SETUP.md` file for detailed setup instruction.
+
 ## Learning Outcomes
 Through this project, I gained hands-on experience in:
 - Designing and implementing a complete CI/CD pipeline using AWS services.
