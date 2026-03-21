@@ -134,4 +134,4 @@ pkill -f app.py || true
 3. Deployment happens on EC2
 
 ## Step 12: Access Application
-http://<EC2-PUBLIC-IP>:5000
+http://EC2-PUBLIC-IP:5000
